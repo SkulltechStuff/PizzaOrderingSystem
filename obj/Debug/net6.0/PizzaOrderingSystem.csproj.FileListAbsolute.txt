@@ -1,0 +1,15 @@
+K:\RT652\PizzaOrderingSystem\bin\Debug\net6.0\PizzaOrderingSystem.exe
+K:\RT652\PizzaOrderingSystem\bin\Debug\net6.0\PizzaOrderingSystem.deps.json
+K:\RT652\PizzaOrderingSystem\bin\Debug\net6.0\PizzaOrderingSystem.runtimeconfig.json
+K:\RT652\PizzaOrderingSystem\bin\Debug\net6.0\PizzaOrderingSystem.dll
+K:\RT652\PizzaOrderingSystem\bin\Debug\net6.0\PizzaOrderingSystem.pdb
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.csproj.AssemblyReference.cache
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.GeneratedMSBuildEditorConfig.editorconfig
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.AssemblyInfoInputs.cache
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.AssemblyInfo.cs
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.csproj.CoreCompileInputs.cache
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.dll
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\refint\PizzaOrderingSystem.dll
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.pdb
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\PizzaOrderingSystem.genruntimeconfig.cache
+K:\RT652\PizzaOrderingSystem\obj\Debug\net6.0\ref\PizzaOrderingSystem.dll
