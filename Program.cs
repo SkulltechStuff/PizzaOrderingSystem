@@ -3,15 +3,17 @@ class Program
 {
     static int pizTypeLoopCheck = 1;
     static string pizzaType = "";
-
     static int pizSizeLoopCheck = 1;
     static string pizzaSize = "";
+    static int pizCrustLoopCheck = 1;
+    static string crustType = "";
     static void Main(string[] args)
     {
         Console.WriteLine("Its Pizza Time! Press any key to continue");
         Console.ReadKey(true);
         PizzaType();
         PizzaSize();
+        CrustType();
         Console.WriteLine("Press any key to finish");
         Console.ReadKey(true);
     }
@@ -65,6 +67,51 @@ class Program
             {
                 Console.WriteLine("Error, invalid input");
             }
+        }
+    }
+    static void CrustType()
+    {
+        string crustTypeInput = "";
+        while(pizCrustLoopCheck == 1)
+        {
+            Console.WriteLine("Please select your crust type: Classic, Thin, Thick or Stuffed?");
+            crustTypeInput = Console.ReadLine();
+            if(crustTypeInput == "Classic" || crustTypeInput == "classic" || crustTypeInput == "CLASSIC")
+            {
+                crustType = "classic";
+                pizCrustLoopCheck = 0;
+            }
+            else if(crustTypeInput == "Thin" || crustTypeInput == "thin" || crustTypeInput == "THIN")
+            {
+                crustType = "thin";
+                pizCrustLoopCheck = 0;
+            }
+            else if(crustTypeInput == "Thick" || crustTypeInput == "thick" || crustTypeInput == "THICK")
+            {
+                crustType = "thick";
+                pizCrustLoopCheck = 0;
+            }
+            else if(crustTypeInput == "Stuffed" || crustTypeInput == "stuffed" || crustTypeInput == "STUFFED")
+            {
+                crustType = "stuffed";
+                pizCrustLoopCheck = 0;
+            }
+            else
+            {
+                Console.WriteLine("Error, invalid input");
+            }
+        }
+    }
+    static void PizzaSauce()
+    {
+        string pizzaSauceInput = "";
+        if(pizzaType == "savoury")
+        {
+
+        }
+        else
+        {
+            
         }
     }
 
