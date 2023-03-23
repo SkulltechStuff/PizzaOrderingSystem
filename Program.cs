@@ -35,12 +35,12 @@ class Program
             pizzaTypeInput = Console.ReadLine();
             if(pizzaTypeInput == "Savoury" || pizzaTypeInput == "savoury" || pizzaTypeInput == "SAVOURY")
             {
-                pizzaType = "savoury";
+                pizzaType = "Savoury";
                 pizTypeLoopCheck = 0;
             }
             else if(pizzaTypeInput == "Sweet" || pizzaTypeInput == "sweet" || pizzaTypeInput == "SWEET")
             {
-                pizzaType = "sweet";
+                pizzaType = "Sweet";
                 pizTypeLoopCheck = 0;
             }
             else
@@ -58,17 +58,17 @@ class Program
             pizzaSizeInput = Console.ReadLine();
             if(pizzaSizeInput == "Small" || pizzaSizeInput == "small" || pizzaSizeInput == "SMALL")
             {
-                pizzaSize = "small";
+                pizzaSize = "Small";
                 pizSizeLoopCheck = 0;
             }
             else if(pizzaSizeInput == "Medium" || pizzaSizeInput == "medium" || pizzaSizeInput == "MEDIUM")
             {
-                pizzaSize = "medium";
+                pizzaSize = "Medium";
                 pizSizeLoopCheck = 0;
             }
             else if(pizzaSizeInput == "Large" || pizzaSizeInput == "large" || pizzaSizeInput == "LARGE")
             {
-                pizzaSize = "large";
+                pizzaSize = "Large";
                 pizSizeLoopCheck = 0;
             }
             else
@@ -86,22 +86,22 @@ class Program
             crustTypeInput = Console.ReadLine();
             if(crustTypeInput == "Classic" || crustTypeInput == "classic" || crustTypeInput == "CLASSIC")
             {
-                crustType = "classic";
+                crustType = "Classic";
                 pizCrustLoopCheck = 0;
             }
             else if(crustTypeInput == "Thin" || crustTypeInput == "thin" || crustTypeInput == "THIN")
             {
-                crustType = "thin";
+                crustType = "Thin";
                 pizCrustLoopCheck = 0;
             }
             else if(crustTypeInput == "Thick" || crustTypeInput == "thick" || crustTypeInput == "THICK")
             {
-                crustType = "thick";
+                crustType = "Thick";
                 pizCrustLoopCheck = 0;
             }
             else if(crustTypeInput == "Stuffed" || crustTypeInput == "stuffed" || crustTypeInput == "STUFFED")
             {
-                crustType = "stuffed";
+                crustType = "Stuffed";
                 pizCrustLoopCheck = 0;
             }
             else
@@ -113,7 +113,7 @@ class Program
     static void PizzaSauce()
     {
         string pizzaSauceInput = "";
-        if(pizzaType == "savoury")
+        if(pizzaType == "Savoury")
         {
             while(pizSauceLoopCheck == 1)
             {
@@ -121,17 +121,17 @@ class Program
                 pizzaSauceInput = Console.ReadLine();
                 if(pizzaSauceInput == "Tomato" || pizzaSauceInput == "tomato" || pizzaSauceInput == "TOMATO")
                 {
-                    pizzaSauce = "tomato";
+                    pizzaSauce = "Tomato";
                     pizSauceLoopCheck = 0;
                 }
                 else if(pizzaSauceInput == "Bbq" || pizzaSauceInput == "bbq" || pizzaSauceInput == "BBQ")
                 {
-                    pizzaSauce = "bbq";
+                    pizzaSauce = "BBQ";
                     pizSauceLoopCheck = 0;
                 }
                 else if(pizzaSauceInput == "Ranch" || pizzaSauceInput == "ranch" || pizzaSauceInput == "RANCH")
                 {
-                    pizzaSauce = "ranch";
+                    pizzaSauce = "Ranch";
                     pizSauceLoopCheck = 0;
                 }
                 else
@@ -148,17 +148,17 @@ class Program
                 pizzaSauceInput = Console.ReadLine();
                 if(pizzaSauceInput == "White" || pizzaSauceInput == "white" || pizzaSauceInput == "WHITE")
                 {
-                    pizzaSauce = "white choc";
+                    pizzaSauce = "White Choc";
                     pizSauceLoopCheck = 0;
                 }
                 else if(pizzaSauceInput == "Milk" || pizzaSauceInput == "milk" || pizzaSauceInput == "MILK")
                 {
-                    pizzaSauce = "milk choc";
+                    pizzaSauce = "Milk Choc";
                     pizSauceLoopCheck = 0;
                 }
                 else if(pizzaSauceInput == "Dark" || pizzaSauceInput == "dark" || pizzaSauceInput == "DARK")
                 {
-                    pizzaSauce = "dark choc";
+                    pizzaSauce = "Dark Choc";
                     pizSauceLoopCheck = 0;
                 }
                 else
@@ -291,6 +291,18 @@ class Program
         Console.WriteLine($"Pizza Size: {pizzaSize}");
         Console.WriteLine($"Crust Type: {crustType}");
         Console.WriteLine($"Pizza Sauce: {pizzaSauce}");
-        Console.WriteLine($"Pizza Toppings: {pizzaToppings}");
+        Console.WriteLine($"Pizza Toppings: {PizzaToppingList()}");
     }
+
+    static string PizzaToppingList()
+        {
+            string toppingsFinal = "";
+            foreach(string topping in pizzaToppings)
+            {
+                toppingsFinal += topping + ", ";
+            }
+
+            toppingsFinal = toppingsFinal.Substring(0, toppingsFinal.Length - 2);
+            return toppingsFinal;
+        }
 }
